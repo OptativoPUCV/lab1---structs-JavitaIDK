@@ -32,3 +32,18 @@ exercises.c:83:1: error: expected identifier or ‘(’ before ‘{’ token
 cc1: all warnings being treated as errors
 Compilation failed
 9601204
+Thu 14 Mar 2024 02:46:29 PM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:32:7: error: unused variable ‘temp’ [-Werror=unused-variable]
+   32 |   int temp = 0;
+      |       ^~~~
+exercises.c: At top level:
+exercises.c:82:1: error: expected identifier or ‘(’ before ‘{’ token
+   82 | {
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+56de6ae
