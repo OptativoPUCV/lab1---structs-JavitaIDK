@@ -1,4 +1,4 @@
-a #include <ctype.h>
+#include <ctype.h>
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -9,15 +9,34 @@ Ejercicio 1: Encuentra el Elemento Mayor
 Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y devuelva el valor más grande del arreglo.
 */
-int findMax(int arr[], int size) { return 0; }
-
+int findMax(int arr[], int size)
+{
+  int masGrande = 0;
+  for(int k = 0; k < size; k++)
+    {
+      if(arr[k] > masGrande)
+      {
+        masGrande = arr[k];
+      }
+    }
+  return masGrande;
+}
 /*
 Ejercicio 2: Invertir un Arreglo
 Descripción: Escribe una función que tome un arreglo y su tamaño, y luego
 invierta el orden de sus elementos.
 */
 void reverseArray(int arr[], int size) {}
-
+{
+  int copiaArr[size];
+  int temp = 0;
+  for (int i = size - 1; i >= 0; i--)
+    {
+      copiaArr[i] = arr[i];
+      arr[i] = copiaArr[i];
+    }
+  return arr;
+}
 /*
 Ejercicio 3: Filtrar Números Pares
 Descripción: Escribe una función que tome un arreglo de enteros
@@ -26,16 +45,33 @@ los números pares del arreglo original.
 newsize apunta a una dirección válida que no ha sido inicializada con nigún valor específico. 
 *newsize debe almacenar el tamaño del nuevo arreglo que se retorna.
 */
-int *filterEvenNumbers(int arr[], int size, int *newSize) { return NULL; }
-
+int *filterEvenNumbers(int arr[], int size, int *newSize)
+{
+  int *nuevoArr = malloc(sizeof(int) * size);
+  *newSize = 0;
+  for(int i = 0; i < size; i++)
+    {
+      if(arr[i] % 2 == 0)
+      {
+        nuevoArr[*newSize] = arr[i];
+      }
+      newSize++;
+      
+    }
+  return nuevoArr;
+}
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
 Descripción: Escribe una función que tome dos arreglos
 ordenados de menor a mayor y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado de menor a mayor.
 */
-void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
-                       int result[]) {}
+void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]) 
+{
+  
+
+  
+}
 
 /*
 Ejercicio 5: Comprobación de Ordenación
@@ -44,7 +80,9 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
   0 si no está ordenado, y -1 si está ordenado en orden descendente.
 */
 int checkSorted(int arr[], int size) { return -2; }
-
+{
+  
+}
 /*
 Ejercicio 6: Información de una Biblioteca
 Descripción: Vamos a representar la información de una biblioteca. En la
