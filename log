@@ -11,3 +11,24 @@ exercises.c:83:1: error: expected identifier or ‘(’ before ‘{’ token
       | ^
 Compilation failed
 defccce
+Thu 14 Mar 2024 02:46:16 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:38:10: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   38 |   return arr;
+      |          ^~~
+exercises.c:29:6: note: declared here
+   29 | void reverseArray(int arr[], int size)
+      |      ^~~~~~~~~~~~
+exercises.c:32:7: error: unused variable ‘temp’ [-Werror=unused-variable]
+   32 |   int temp = 0;
+      |       ^~~~
+exercises.c: At top level:
+exercises.c:83:1: error: expected identifier or ‘(’ before ‘{’ token
+   83 | {
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+9601204
