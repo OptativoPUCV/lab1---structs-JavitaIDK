@@ -32,6 +32,7 @@ void reverseArray(int arr[], int size)
   for (int i = 0; i < size / 2; i++)
     {
       int temporal = arr[i];
+      arr[i] = arr[final];
       arr[final] = temporal;
       final--;
     }
