@@ -176,3 +176,17 @@ Thu 14 Mar 2024 03:12:56 PM UTC:
  tests:  0|0
 total_score: 20/70
 f7635bf
+Thu 14 Mar 2024 03:14:51 PM UTC: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:50:7: error: array size missing in ‘nuevoArr’
+   50 |   int nuevoArr[];
+      |       ^~~~~~~~
+exercises.c:60:10: error: function returns address of local variable [-Werror=return-local-addr]
+   60 |   return nuevoArr;
+      |          ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+63ddebb
