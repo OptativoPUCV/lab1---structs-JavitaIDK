@@ -190,3 +190,9 @@ exercises.c:60:10: error: function returns address of local variable [-Werror=re
 cc1: all warnings being treated as errors
 Compilation failed
 63ddebb
+Thu 14 Mar 2024 03:16:07 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  0|5
+total_score: 20/70
+0ef0596
