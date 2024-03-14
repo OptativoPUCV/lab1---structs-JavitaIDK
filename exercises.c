@@ -29,7 +29,6 @@ invierta el orden de sus elementos.
 void reverseArray(int arr[], int size)
 {
   int copiaArr[size];
-  int temp = 0;
   for (int i = size - 1; i >= 0; i--)
     {
       copiaArr[i] = arr[i];
@@ -67,7 +66,7 @@ arreglos en un tercer arreglo también ordenado de menor a mayor.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]) 
 {
-  
+  exit(EXIT_FAILURE);
 
   
 }
@@ -80,7 +79,7 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 */
 int checkSorted(int arr[], int size) { return -2; }
 {
-  
+  return 0;
 }
 /*
 Ejercicio 6: Información de una Biblioteca
