@@ -155,3 +155,13 @@ Thu 14 Mar 2024 03:10:58 PM UTC:
  tests:  0|5
 total_score: 20/70
 0bb7b61
+Thu 14 Mar 2024 03:11:16 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:59:37: error: invalid operands to binary * (have ‘long unsigned int’ and ‘int *’)
+   59 |       nuevoArr = malloc(sizeof(int) * newSize);
+      |                                     ^
+Compilation failed
+ddd8a09
