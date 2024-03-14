@@ -90,3 +90,9 @@ Thu 14 Mar 2024 02:49:13 PM UTC:
  tests:  0|2
 Test Merged Sort Arrays...
 a3247c3
+Thu 14 Mar 2024 02:57:32 PM UTC: 
+ exercises.c | 18 +++++++++++++++++-
+ 1 file changed, 17 insertions(+), 1 deletion(-)
+ tests:  0|6
+total_score: 10/70
+8e32819
