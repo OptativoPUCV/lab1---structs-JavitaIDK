@@ -126,3 +126,14 @@ Thu 14 Mar 2024 03:05:15 PM UTC:
  tests:  0|6
 total_score: 10/70
 b18a76f
+Thu 14 Mar 2024 03:08:41 PM UTC: 
+ exercises.c | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:31:7: error: unused variable ‘contador’ [-Werror=unused-variable]
+   31 |   int contador = 0;
+      |       ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+c1635fa
