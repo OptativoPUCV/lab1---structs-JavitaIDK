@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdbool.h>
 
 /*
 Ejercicio 1: Encuentra el Elemento Mayor
@@ -92,7 +93,27 @@ Descripción: Escribe una función que tome un arreglo y su tamaño,
 y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
   0 si no está ordenado, y -1 si está ordenado en orden descendente.
 */
-int checkSorted(int arr[], int size) { return -2; }
+int checkSorted(int arr[], int size) {
+  int ascendente = true;
+  int descendente = true;
+  for(int i = 0; i < size - 1; i++)
+  {
+    if(arr[i] > arr[i + 1])
+    {
+      ascendente = false;
+    }else if(arr[i] < arr[i + 1])
+    {
+      descendente = false;
+    }
+  }
+  if(ascendente)
+  {
+    return 1;
+  }else if(descendente){
+    return -1;
+  }else
+    return 0;
+}
 
 /*
 Ejercicio 6: Información de una Biblioteca
@@ -114,10 +135,8 @@ typedef struct {
 } Libro;
 
 void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
-                      int anioNacimiento, int anioPublicacion) 
-{
-  scanf("%s",libro->titulo);
-}
+                      int anioNacimiento, int anioPublicacion) {}
+
 /*
 Ejercicio 7: Lista enlazada de números
 Descripción: Escribe una función que tome un arreglo de enteros y su tamaño, y
