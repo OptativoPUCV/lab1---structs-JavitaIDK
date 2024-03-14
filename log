@@ -208,3 +208,17 @@ Thu 14 Mar 2024 03:16:46 PM UTC:
  tests:  0|5
 total_score: 20/70
 a22429a
+Thu 14 Mar 2024 03:17:17 PM UTC: 
+ exercises.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:54:7: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   54 |       if(arr[i] % 2 == 0 && arr[i] % 2 != 0);
+      |       ^~
+exercises.c:55:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   55 |       {
+      |       ^
+cc1: all warnings being treated as errors
+Compilation failed
+bffdca2
