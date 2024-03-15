@@ -283,3 +283,23 @@ exercises.c:140:3: error: ignoring return value of ‘scanf’ declared with att
 cc1: all warnings being treated as errors
 Compilation failed
 7108b71
+Fri 15 Mar 2024 06:24:53 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:140:10: error: expected expression before ‘Libro’
+  140 |   strcpy(Libro->titulo, titulo);
+      |          ^~~~~
+exercises.c:140:3: error: too few arguments to function ‘strcpy’
+  140 |   strcpy(Libro->titulo, titulo);
+      |   ^~~~~~
+In file included from /nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/features.h:490,
+                 from /nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/ctype.h:25,
+                 from exercises.c:1,
+                 from test.c:1:
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/bits/string_fortified.h:77:1: note: declared here
+   77 | __NTH (strcpy (char *__restrict __dest, const char *__restrict __src))
+      | ^~~~~
+Compilation failed
+9c7eaec
