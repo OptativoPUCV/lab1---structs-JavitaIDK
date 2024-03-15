@@ -137,14 +137,11 @@ typedef struct {
 void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
                       int anioNacimiento, int anioPublicacion)
 {
+  libro->autor.anioNacimiento = anioNacimiento;
+  libro->anioPublicacion = anioPublicacion;  
   strcpy(libro->titulo, titulo);
   strcpy(libro->autor.nombre,nombreAutor);
-  libro->autor.anioNacimiento = anioNacimiento;
-  libro->anioPublicacion = anioPublicacion;
-
-  
 }
-
 /*
 Ejercicio 7: Lista enlazada de números
 Descripción: Escribe una función que tome un arreglo de enteros y su tamaño, y
