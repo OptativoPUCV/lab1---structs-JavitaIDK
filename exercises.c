@@ -168,7 +168,6 @@ Nodo *crearListaEnlazada(int arr[], int size)
   for(int i = 0; i < size; i++)
     {
       Nodo *nuevoNodo = (Nodo *)malloc(sizeof(Nodo));
-      scanf("%d",&num);
       nuevoNodo->numero = arr[i];
       nuevoNodo->siguiente = NULL;
       
