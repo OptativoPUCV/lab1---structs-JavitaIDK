@@ -445,3 +445,14 @@ exercises.c:73:7: error: unused variable ‘tallaFinal’ [-Werror=unused-variab
 cc1: all warnings being treated as errors
 Compilation failed
 f101cb2
+Fri 15 Mar 2024 06:53:01 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:80:16: error: ‘tallaNueva’ undeclared (first use in this function)
+   80 |         result[tallaNueva] = arr1[cont1];
+      |                ^~~~~~~~~~
+exercises.c:80:16: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+20871ea
