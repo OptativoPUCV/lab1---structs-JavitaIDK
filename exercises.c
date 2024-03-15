@@ -78,12 +78,13 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]
       if(arr1[cont1] < arr2[cont2])
       {
         result[tallaNueva] = arr1[cont1];
+        tallaNueva++;
         cont1++;
       }else{
         result[tallaNueva] = arr2[cont2];
+        tallaNueva++;
         cont2++;
       }  
-      tallaNueva++;
     }
 }
 
@@ -163,7 +164,6 @@ Nodo *crearListaEnlazada(int arr[], int size)
 { 
   Nodo *primero = NULL;
   Nodo *anterior = NULL;
-  
   for(int i = 0; i < size; i++)
     {
       Nodo *nuevoNodo = (Nodo *)malloc(sizeof(Nodo));
@@ -177,7 +177,5 @@ Nodo *crearListaEnlazada(int arr[], int size)
 
       anterior = nuevoNodo;
     }
-  
-    
   return primero;
 }
