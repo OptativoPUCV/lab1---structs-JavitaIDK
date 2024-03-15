@@ -135,7 +135,12 @@ typedef struct {
 } Libro;
 
 void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
-                      int anioNacimiento, int anioPublicacion) {}
+                      int anioNacimiento, int anioPublicacion)
+{
+  scanf("%s", libro->titulo);
+
+  
+}
 
 /*
 Ejercicio 7: Lista enlazada de números
