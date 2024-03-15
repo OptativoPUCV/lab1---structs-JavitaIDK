@@ -355,3 +355,23 @@ exercises.c:177:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 beb45d6
+Fri 15 Mar 2024 06:38:30 PM UTC: 
+ exercises.c | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:165:9: error: unused variable ‘anterior’ [-Werror=unused-variable]
+  165 |   Nodo *anterior = NULL;
+      |         ^~~~~~~~
+exercises.c:164:9: error: unused variable ‘primero’ [-Werror=unused-variable]
+  164 |   Nodo *primero = NULL;
+      |         ^~~~~~~
+exercises.c:171:7: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+  171 |       scanf("%d",&num);
+      |       ^~~~~~~~~~~~~~~~
+exercises.c:178:1: error: control reaches end of non-void function [-Werror=return-type]
+  178 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+032a1b7

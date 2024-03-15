@@ -161,15 +161,16 @@ typedef struct nodo {
 
 Nodo *crearListaEnlazada(int arr[], int size)
 { 
-  Nodo *temp = NULL;
+  Nodo *primero = NULL;
+  Nodo *anterior = NULL;
   int num;
-  temp = (Nodo *)realloc(sizeof(Nodo) * size);
-  
+
   for(int i = 0; i < size; i++)
     {
+      Nodo *nuevoNodo = (Nodo *)malloc(sizeof(Nodo));
       scanf("%d",&num);
-      temp->numero = num;
-      temp->siguiente = NULL;
+      nuevoNodo->numero = arr[i];
+      nuevoNodo->siguiente = NULL;
       
     }
   
