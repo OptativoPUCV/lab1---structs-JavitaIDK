@@ -88,11 +88,13 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]
   while(cont1 < size1)
     {
       result[tallaNueva] = arr1[cont1];
+      cont1++;
       tallaNueva++;
     }
    while(cont2 < size2)
      {
        result[tallaNueva] = arr1[cont2];
+       cont2++;
        tallaNueva++;
      }
 }
