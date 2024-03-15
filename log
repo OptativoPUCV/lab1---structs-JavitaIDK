@@ -430,3 +430,18 @@ Fri 15 Mar 2024 06:49:11 PM UTC:
  tests:  0|1
 total_score: 60/70
 753bdc7
+Fri 15 Mar 2024 06:52:12 PM UTC: 
+ exercises.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:80:16: error: ‘tallaNueva’ undeclared (first use in this function)
+   80 |         result[tallaNueva] = arr1[cont1];
+      |                ^~~~~~~~~~
+exercises.c:80:16: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:73:7: error: unused variable ‘tallaFinal’ [-Werror=unused-variable]
+   73 |   int tallaFinal = size1 + size2;
+      |       ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f101cb2
