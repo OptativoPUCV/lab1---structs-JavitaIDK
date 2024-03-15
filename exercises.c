@@ -87,6 +87,22 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]
           i++;
         }
     }
+  //ordenar menor a mayor
+  int aux;
+  for(int indice = 0; indice < size3 - 1; indice++)
+    {
+      for(int n = indice + 1; n <  size3; n++)
+        {
+          if(result[indice] < result[n])
+          {
+            aux = result[indice];
+            result[indice] = result[n];
+            result[indice] = aux;
+          }
+        }
+      
+    }
+  
 }
 
 /*
