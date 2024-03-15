@@ -159,4 +159,19 @@ typedef struct nodo {
   struct nodo *siguiente; // puntero al siguiente nodo
 } Nodo;
 
-Nodo *crearListaEnlazada(int arr[], int size) { return NULL; }
+Nodo *crearListaEnlazada(int arr[], int size)
+{ 
+  Nodo *temp = NULL;
+  int num;
+  temp = (Nodo *)realloc(sizeof(Nodo) * size);
+  
+  for(int i = 0; i < size; i++)
+    {
+      scanf("%d",&num);
+      temp->numero = num;
+      temp->siguiente = NULL;
+      
+    }
+  
+
+}

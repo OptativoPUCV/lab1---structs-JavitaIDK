@@ -321,3 +321,37 @@ Fri 15 Mar 2024 06:27:48 PM UTC:
  tests:  0|2
 total_score: 50/70
 f598aa7
+Fri 15 Mar 2024 06:35:35 PM UTC: 
+ exercises.c | 17 ++++++++++++++++-
+ 1 file changed, 16 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:166:39: error: passing argument 1 of ‘realloc’ makes pointer from integer without a cast [-Werror=int-conversion]
+  166 |   temp = (Nodo *)realloc(sizeof(Nodo) * size);
+      |                          ~~~~~~~~~~~~~^~~~~~
+      |                                       |
+      |                                       long unsigned int
+In file included from exercises.c:4,
+                 from test.c:1:
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/stdlib.h:551:29: note: expected ‘void *’ but argument is of type ‘long unsigned int’
+  551 | extern void *realloc (void *__ptr, size_t __size)
+      |                       ~~~~~~^~~~~
+In file included from test.c:1:
+exercises.c:166:18: error: too few arguments to function ‘realloc’
+  166 |   temp = (Nodo *)realloc(sizeof(Nodo) * size);
+      |                  ^~~~~~~
+In file included from exercises.c:4,
+                 from test.c:1:
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/stdlib.h:551:14: note: declared here
+  551 | extern void *realloc (void *__ptr, size_t __size)
+      |              ^~~~~~~
+In file included from test.c:1:
+exercises.c:170:7: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+  170 |       scanf("%d",&num);
+      |       ^~~~~~~~~~~~~~~~
+exercises.c:177:1: error: control reaches end of non-void function [-Werror=return-type]
+  177 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+beb45d6
